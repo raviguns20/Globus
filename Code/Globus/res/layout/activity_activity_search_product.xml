@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/main_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/s45dp"
+            android:background="@color/toolbar_color"
+            android:minHeight="?attr/actionBarSize"
+            app:theme="@style/AppBar" >
+
+            <include layout="@layout/seach_actionbar" />
+        </android.support.v7.widget.Toolbar>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/s60dp"
+        android:orientation="horizontal"
+        android:weightSum="100" >
+
+        <RelativeLayout
+            android:id="@+id/btn_voice_serach"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="49" >
+
+            <ImageView
+                android:id="@+id/img_voice_serach"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/search_icon" />
+
+            <TextView
+                style="@style/style_bold_black_text"
+                android:layout_below="@id/img_voice_serach"
+                android:layout_centerHorizontal="true"
+                android:text="@string/txt_voice_search" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2" >
+
+            <TextView
+                style="@style/style_singleline_yellow"
+                android:layout_marginTop="@dimen/s10dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/btn_barcode_serach"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="49" >
+
+            <ImageView
+                android:id="@+id/img_barcode_serach"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/search_icon" />
+
+            <TextView
+                style="@style/style_bold_black_text"
+                android:layout_below="@id/img_barcode_serach"
+                android:layout_centerHorizontal="true"
+                android:text="@string/txt_barcode_search" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <TextView style="@style/style_singleline_horizontal_yellow" />
+
+</LinearLayout>

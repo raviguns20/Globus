@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.globus"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rlTopLayout"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content" >
+
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/imgProductImage"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/s0.5dp"
+            android:padding="@dimen/s0.5dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/product_image" />
+
+        <include
+            android:id="@+id/llProductOverlap"
+            layout="@layout/adapter_product_overlap"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgProductImage"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/s2dp" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2"
+                android:orientation="vertical" >
+
+                <com.globus.fontutil.TextView_FontFutuLt_0
+                    android:id="@+id/txtProductTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:paddingEnd="@dimen/s2dp"
+                    android:paddingLeft="@dimen/s5dp"
+                    android:paddingRight="@dimen/s2dp"
+                    android:paddingStart="@dimen/s5dp"
+                    android:singleLine="true"
+                    android:text="ProductTitle"
+                    android:textColor="@color/product_title"
+                    android:textSize="@dimen/s14sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/s2dp"
+                    android:paddingLeft="@dimen/s5dp"
+                    android:paddingRight="@dimen/s5dp"
+                    android:paddingTop="@dimen/s2dp" >
+
+                    <com.globus.fontutil.TextView_FontFutuLt_0
+                        android:id="@+id/txtProductSellingPrice"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="start"
+                        android:paddingEnd="@dimen/s2dp"
+                        android:paddingLeft="@dimen/s0dp"
+                        android:paddingRight="@dimen/s2dp"
+                        android:paddingStart="@dimen/s0dp"
+                        android:singleLine="true"
+                        android:text="Rs.699"
+                        android:textColor="@color/product_selling_price"
+                        android:textSize="@dimen/s14sp"
+                        android:textStyle="bold" />
+
+                    <com.globus.fontutil.TextView_FontFutuLt_0
+                        android:id="@+id/txtProductActualPrice"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="start"
+                        android:paddingEnd="@dimen/s2dp"
+                        android:paddingLeft="@dimen/s0dp"
+                        android:paddingRight="@dimen/s2dp"
+                        android:paddingStart="@dimen/s0dp"
+                        android:singleLine="true"
+                        android:text="Rs.699"
+                        android:textColor="@color/product_actual_price"
+                        android:textSize="@dimen/s13sp" />
+
+                    <com.globus.fontutil.TextView_FontFutuLt_0
+                        android:id="@+id/txtProductDiscount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="start"
+                        android:paddingEnd="@dimen/s2dp"
+                        android:paddingLeft="@dimen/s0dp"
+                        android:paddingRight="@dimen/s2dp"
+                        android:paddingStart="@dimen/s0dp"
+                        android:singleLine="true"
+                        android:text="Rs699"
+                        android:textColor="@color/product_discount"
+                        android:textSize="@dimen/s13sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imgProductMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.8"
+                android:padding="@dimen/s5dp"
+                android:src="@drawable/options_icon" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

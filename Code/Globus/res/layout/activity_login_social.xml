@@ -1,0 +1,279 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="100"
+    tools:context="com.globus.ActivitySocialLogin" >
+
+    <android.support.v7.widget.Toolbar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/main_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/toolbar_color"
+        android:minHeight="?attr/actionBarSize"
+        app:theme="@style/AppBar" >
+
+        <include layout="@layout/custom_toolbar" />
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="70"
+        android:background="@color/gray_global_background"
+        android:orientation="vertical"
+        android:weightSum="100" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="60"
+            android:gravity="center|bottom" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/banner_image" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="40"
+            android:gravity="center|top"
+            android:orientation="vertical" >
+
+            <com.globus.fontutil.TextView_FUTURAM
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/d30"
+                android:gravity="center"
+                android:text="@string/social_lable_fashion_must_buy"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="@dimen/d20" />
+
+            <com.globus.fontutil.TextView_FontFutuLt_0
+                android:id="@+id/txtLable2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/d10"
+                android:gravity="center"
+                android:text="@string/social_lable_updgrade"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/black"
+                android:textSize="@dimen/d13" />
+
+            <com.globus.fontutil.TextView_FontFutuLt_0
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/d10"
+                android:gravity="center"
+                android:paddingLeft="@dimen/d35"
+                android:paddingRight="@dimen/d35"
+                android:text="@string/social_lable_login_register"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/black"
+                android:textSize="@dimen/d13" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="30"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:weightSum="100" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="55" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:gravity="center|bottom"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/d15"
+                android:paddingRight="@dimen/d15"
+                android:weightSum="100" >
+
+                <RelativeLayout
+                    android:id="@+id/btnFacebook"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/d45"
+                    android:layout_marginRight="@dimen/d5"
+                    android:layout_weight="50"
+                    android:background="@drawable/shape_square_gray_border"
+                    android:onClick="onClick" >
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/d15"
+                        android:src="@drawable/fb_icon" />
+
+                    <com.globus.fontutil.TextView_FUTURAM
+                        android:id="@+id/textView1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/d15"
+                        android:layout_toRightOf="@+id/imageView2"
+                        android:text="@string/social_lable_facebook"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/gray_light"
+                        android:textSize="@dimen/d15" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/btnGoogle"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/d45"
+                    android:layout_marginLeft="@dimen/d5"
+                    android:layout_weight="50"
+                    android:background="@drawable/shape_square_gray_border"
+                    android:onClick="onClick" >
+
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/d15"
+                        android:src="@drawable/g_plus_icon" />
+
+                    <com.globus.fontutil.TextView_FUTURAM
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/d15"
+                        android:layout_toRightOf="@+id/imageView3"
+                        android:text="@string/social_lable_google"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/gray_light"
+                        android:textSize="@dimen/d15" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <com.globus.fontutil.TextView_FontFutuLt_0
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/d18"
+                android:text="@string/social_lable_continue_with"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/black" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="45" >
+
+            <RelativeLayout
+                android:id="@+id/Rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/d12" >
+
+                <com.globus.fontutil.TextView_FontFutuLt_0
+                    android:id="@+id/textView22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/social_lable_or"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/black" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="0.5dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/d5"
+                    android:layout_toLeftOf="@+id/textView22"
+                    android:background="@color/gray_light" >
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="0.5dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/d5"
+                    android:layout_toRightOf="@+id/textView22"
+                    android:background="@color/gray_light" >
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/Rl"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="100" >
+
+                <com.globus.fontutil.TextView_FUTURAM
+                    android:id="@+id/txtLogin"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="50"
+                    android:gravity="center"
+                    android:text="@string/social_lable_login"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/d20" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/d15"
+                    android:layout_marginTop="@dimen/d15"
+                    android:background="@color/gray_light" />
+
+                <com.globus.fontutil.TextView_FUTURAM
+                    android:id="@+id/txtRegister"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="50"
+                    android:gravity="center"
+                    android:text="@string/social_lable_register"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/d20" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

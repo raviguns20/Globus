@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/custom_toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/toolbar_color"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:padding="@dimen/s5dp" >
+
+    <RelativeLayout
+        android:id="@+id/rel_main_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/s40dip" >
+
+        <ImageView
+            android:id="@+id/img_main_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/main_logo" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rel_profile_cart"
+        android:layout_width="@dimen/s40dip"
+        android:layout_height="@dimen/s40dip"
+        android:layout_alignParentRight="true" >
+
+        <ImageView
+            android:id="@+id/img_profile_cart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/cart_icon" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rel_notification"
+        android:layout_width="@dimen/s40dip"
+        android:layout_height="@dimen/s40dip"
+        android:layout_marginRight="@dimen/s25dp"
+        android:layout_toLeftOf="@id/rel_profile_cart" >
+
+        <ImageView
+            android:id="@+id/img_notification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/notification_icon_off" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rel_profile_icon"
+        android:layout_width="@dimen/s40dip"
+        android:layout_height="@dimen/s40dip"
+        android:layout_marginRight="@dimen/s25dp"
+        android:layout_toLeftOf="@id/rel_notification" >
+
+        <ImageView
+            android:id="@+id/img_profile_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/profile_icon" />
+    </RelativeLayout>
+
+</RelativeLayout>

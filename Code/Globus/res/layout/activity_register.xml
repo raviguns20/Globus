@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/rootView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical" >
+
+        <android.support.v7.widget.Toolbar
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/main_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/toolbar_color"
+            android:minHeight="?attr/actionBarSize"
+            app:theme="@style/AppBar" >
+
+            <include layout="@layout/custom_toolbar_tiitle" />
+        </android.support.v7.widget.Toolbar>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/gray_global_background"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/d40"
+            android:paddingLeft="@dimen/d15"
+            android:paddingRight="@dimen/d15"
+            android:paddingTop="@dimen/d40" >
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/tilUserName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <com.globus.fontutil.EditText_FUTURAM
+                    android:id="@+id/etUserName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/gray_global_background"
+                    android:ems="10"
+                    android:hint="@string/register_hint_fullname"
+                    android:inputType="text|textNoSuggestions"
+                    android:paddingBottom="@dimen/s5dp"
+                    android:paddingTop="@dimen/s5dp"
+                    android:textSize="@dimen/d15" >
+                </com.globus.fontutil.EditText_FUTURAM>
+            </android.support.design.widget.TextInputLayout>
+
+            <LinearLayout
+                android:id="@+id/rowUsername"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="@dimen/s5dp"
+                android:background="@color/gray"
+                android:orientation="vertical" >
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/d3" >
+
+                <TextView
+                    android:id="@+id/txtTotalProgress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:text="@string/register_progress_total" />
+
+                <TextView
+                    android:id="@+id/txtProgress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toLeftOf="@+id/txtTotalProgress"
+                    android:text="0" />
+
+                <TextView
+                    android:id="@+id/txtUserNameError"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:text="TextView"
+                    android:textColor="@color/red"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/tilEmailAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="45dp"
+                android:orientation="horizontal" >
+
+                <com.globus.fontutil.EditText_FUTURAM
+                    android:id="@+id/etEmailAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/gray_global_background"
+                    android:ems="10"
+                    android:hint="@string/register_hint_email"
+                    android:inputType="text|textNoSuggestions"
+                    android:paddingBottom="@dimen/s5dp"
+                    android:paddingTop="@dimen/s5dp"
+                    android:textSize="@dimen/d15" >
+                </com.globus.fontutil.EditText_FUTURAM>
+            </android.support.design.widget.TextInputLayout>
+
+            <LinearLayout
+                android:id="@+id/rowEmail"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="@dimen/s5dp"
+                android:background="@color/gray"
+                android:orientation="vertical" >
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtEmailError"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="@dimen/d3"
+                android:text="TextView"
+                android:textColor="@color/red"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp" >
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/tilPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_toLeftOf="@+id/txtShow"
+                    android:orientation="horizontal" >
+
+                    <com.globus.fontutil.EditText_FUTURAM
+                        android:id="@+id/etPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/gray_global_background"
+                        android:ems="10"
+                        android:hint="@string/register_hint_password"
+                        android:inputType="textPassword|textNoSuggestions"
+                        android:paddingBottom="@dimen/s5dp"
+                        android:paddingTop="@dimen/s5dp"
+                        android:textSize="@dimen/d15" >
+                    </com.globus.fontutil.EditText_FUTURAM>
+                </android.support.design.widget.TextInputLayout>
+
+                <TextView
+                    android:id="@+id/txtShow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/tilPassword"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:gravity="center"
+                    android:text="@string/login_lable_show"
+                    android:textColor="@color/color_global_yellow" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/rowPassword"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="@dimen/s5dp"
+                android:background="@color/gray"
+                android:orientation="vertical" >
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtPasswordError"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="@dimen/d3"
+                android:text="TextView"
+                android:textColor="@color/red"
+                android:visibility="gone" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/tilMobileNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:orientation="horizontal" >
+
+                <com.globus.fontutil.EditText_FUTURAM
+                    android:id="@+id/etMobileNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/gray_global_background"
+                    android:ems="10"
+                    android:hint="@string/register_hint_mobile"
+                    android:inputType="number"
+                    android:paddingBottom="@dimen/s5dp"
+                    android:paddingTop="@dimen/s5dp"
+                    android:textSize="@dimen/d15" >
+                </com.globus.fontutil.EditText_FUTURAM>
+            </android.support.design.widget.TextInputLayout>
+
+            <LinearLayout
+                android:id="@+id/rowMobile"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="@dimen/s5dp"
+                android:background="@color/gray"
+                android:orientation="vertical" >
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtMobileError"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="@dimen/d3"
+                android:text="TextView"
+                android:textColor="@color/red"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/d40"
+                android:orientation="horizontal"
+                android:padding="@dimen/d10" >
+
+                <LinearLayout
+                    android:id="@+id/LLMale"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_square_gray_border"
+                    android:gravity="center"
+                    android:onClick="onClick"
+                    android:padding="@dimen/d15" >
+
+                    <com.globus.fontutil.TextView_FUTURAM
+                        android:id="@+id/txtMale"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/register_lable_male"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/LLFeMale"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_square_gray_border"
+                    android:gravity="center"
+                    android:onClick="onClick"
+                    android:padding="@dimen/d15" >
+
+                   <com.globus.fontutil.TextView_FUTURAM
+                        android:id="@+id/txtFemale"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/register_lable_female"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/gray_global_background" >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_shadow" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:padding="@dimen/d20" >
+
+            <Button
+                android:id="@+id/btnRegister"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d50"
+                android:background="@drawable/button_patch"
+                android:onClick="onClick"
+                android:text="@string/register_lable_register"
+                android:textSize="@dimen/d16" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

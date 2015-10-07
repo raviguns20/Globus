@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/product_width"
+    android:layout_height="@dimen/product_height"
+    android:layout_marginBottom="@dimen/s10dp"
+    android:background="@color/overlap_product_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rlContainerProductOverlap"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/s0.5dp" >
+
+        <LinearLayout
+            android:id="@+id/llProductOverlapAddtoWishlist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/llProductOverlapSimilar"
+            android:layout_marginEnd="@dimen/s10dp"
+            android:layout_marginRight="@dimen/s10dp"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/s5dp"
+            android:paddingTop="@dimen/s5dp" >
+
+            <TextView
+                android:id="@+id/txtOverlapAddToWishList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/s7dp"
+                android:layout_marginStart="@dimen/s7dp"
+                android:layout_marginTop="@dimen/s10dp"
+                android:layout_weight="0.25"
+                android:background="@drawable/box_1"
+                android:gravity="end|center_vertical"
+                android:paddingBottom="@dimen/s2dp"
+                android:paddingEnd="@dimen/s10dp"
+                android:paddingLeft="@dimen/s2dp"
+                android:paddingRight="@dimen/s10dp"
+                android:paddingStart="@dimen/s2dp"
+                android:paddingTop="@dimen/s2dp"
+                android:singleLine="true"
+                android:text="@string/add_to_wishlist"
+                android:textColor="@color/product_title"
+                android:textSize="@dimen/s14sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/s5dp"
+                android:layout_weight="0.75"
+                android:background="@drawable/icon_circle"
+                android:padding="@dimen/s8dp" >
+
+                <ImageView
+                    android:id="@+id/imgOverlapAddToWishList"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/selector_product_list_like" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llProductOverlapSimilar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="@dimen/s10dp"
+            android:layout_marginRight="@dimen/s10dp"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/s5dp"
+            android:paddingTop="@dimen/s5dp" >
+
+            <TextView
+                android:id="@+id/txtOverlapSimilar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/s60dp"
+                android:layout_marginStart="@dimen/s60dp"
+                android:layout_marginTop="@dimen/s10dp"
+                android:layout_weight="0.25"
+                android:background="@drawable/box_1"
+                android:gravity="end|center_vertical"
+                android:paddingBottom="@dimen/s2dp"
+                android:paddingEnd="@dimen/s10dp"
+                android:paddingLeft="@dimen/s2dp"
+                android:paddingRight="@dimen/s10dp"
+                android:paddingStart="@dimen/s2dp"
+                android:paddingTop="@dimen/s2dp"
+                android:singleLine="true"
+                android:text="@string/similar"
+                android:textColor="@color/product_title"
+                android:textSize="@dimen/s14sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/s5dp"
+                android:layout_weight="0.75"
+                android:background="@drawable/icon_circle"
+                android:padding="@dimen/s8dp" >
+
+                <ImageView
+                    android:id="@+id/imgOverlapSimilar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/similar_icon" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

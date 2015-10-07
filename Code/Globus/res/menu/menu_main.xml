@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" >
+
+    <item
+        android:id="@+id/tb_contextual"
+        android:icon="@drawable/profile_icon"
+        android:title="Contextual mode"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/tb_refresh"
+        android:icon="@drawable/notification_icon_off"
+        android:title="Refresh"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/tb_cart"
+        android:icon="@drawable/profile_icon"
+        android:title="Refresh"
+        app:showAsAction="always"/>
+
+    <group android:id="@+id/tb_group_contextual" >
+        <item
+            android:id="@+id/tb_done"
+            android:icon="@drawable/notification_icon_off"
+            android:title="Done"
+            app:showAsAction="always"/>
+        <item
+            android:id="@+id/tb_done_all"
+            android:icon="@drawable/notification_icon_on"
+            android:title="Done all"
+            app:showAsAction="never"/>
+    </group>
+
+</menu>

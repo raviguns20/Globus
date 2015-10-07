@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/s10dip"
+    android:orientation="horizontal" >
+
+    <com.globus.fontutil.TextView_FUTURAM
+        android:id="@+id/txtItemName"
+        style="@style/style_txtTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.30"
+        />
+
+    <com.globus.fontutil.TextView_FontFutuLt_0
+        android:id="@+id/txtItemValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.50"
+        android:textSize="@dimen/s18sp" />
+
+</LinearLayout>

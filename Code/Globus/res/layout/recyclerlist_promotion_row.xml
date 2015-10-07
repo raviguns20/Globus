@@ -1,0 +1,59 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/s5dip"
+        android:background="@drawable/shape_square_border"
+        android:gravity="center_horizontal|center_vertical"
+        android:orientation="vertical" >
+
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/imgProduct"
+            android:layout_width="@dimen/s150dip"
+            android:layout_height="@dimen/s150dip"
+            android:layout_margin="@dimen/s5dip"
+            android:background="@drawable/ic_launcher" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <com.globus.fontutil.TextView_FontFutuLt_0
+                android:id="@+id/txtProductName"
+                style="@style/style_dark_grey_text"
+                android:layout_marginTop="@dimen/s5dip"
+                android:gravity="center"
+                android:paddingBottom="@dimen/s5dip"
+                android:paddingLeft="@dimen/s3dip"
+                android:paddingRight="@dimen/s3dip"
+                android:paddingTop="@dimen/s5dip"
+                android:text="@string/txt_no_text"
+                android:textSize="@dimen/s20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <com.globus.fontutil.TextView_FontFutuLt_0
+                android:id="@+id/txtProductPrice"
+                style="@style/style_bold_black_text"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:paddingBottom="@dimen/s5dip"
+                android:paddingLeft="@dimen/s3dip"
+                android:paddingRight="@dimen/s3dip"
+                android:paddingTop="@dimen/s5dip"
+                android:text="@string/txt_no_text" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

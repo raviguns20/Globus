@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <style name="Theme.AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+	    <item name="colorPrimary">@color/toolbar_color</item>
+	    <item name="colorPrimaryDark">@color/toolbar_color</item>
+	    <item name="colorAccent">@color/toolbar_color</item>	 
+		<item name="colorControlNormal">@color/toolbar_color</item>  
+	    <item name="colorControlActivated">@color/toolbar_color</item>
+		<item name="colorSwitchThumbNormal">@color/toolbar_color</item>
+	</style>
+
+</resources>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    
+    <!-- R -->
+    
+    <color name="gray_global_background">#f2f2f3</color>
+    <color name="gray_dark">#231f20</color>
+    <color name="gray_light">#717171</color>
+    <color name="color_yellow">#f3e877</color>
+    <color name="color_global_yellow">#d5e14d</color>
+    <color name="toolbar_color">#231f20</color>
+    <color name="white">#ffffffff</color>
+    <color name="black">#ff000000</color>
+    <color name="skyblue">#51b6dc</color>
+    <color name="red">#ED262A</color>
+    <color name="gray">#888888</color>
+    <color name="light_gray">#CFCFCF</color>
+    <color name="light_gray_full">#dFdFdF</color>
+    <color name="black_trans">#55000000</color>
+    <color name="black_trans_dark">#CC000000</color>
+    
+    
+    <!-- OTHER -->
+    <color name="color_darkgray">#a8a8a8</color>
+    <color name="color_black">#000000</color>
+    <color name="orange">#ff5500</color>
+    <color name="color_white">#FEFFF1</color>
+    <color name="color_tranprant_white">#80FEFFF1</color>
+    <color name="transparent">#00000000</color>
+    <color name="date_color">#999999</color>
+    <color name="gold">#e6b121</color>
+    <color name="blueback">#99FFFF</color>
+    <color name="articlecolor">#3399FF</color>
+    <color name="article_title">#3399FF</color>
+    <color name="cachecolor">#8ad0e8</color>
+    <color name="color_red">#FF0000</color>
+    <color name="pink">#FF00FF</color>
+    <color name="color_darkgreen">#00FF00</color>
+    <color name="color_green">#3edcd9</color>
+    <color name="mycolor">#FF9900</color>
+    <color name="color_gray">#cccccc</color>
+    <color name="product_title">#231f20</color>
+    <color name="product_selling_price">#000000</color>
+    <color name="product_actual_price">#231f20</color>
+    <color name="product_discount">#ff0000</color>
+    <color name="light_grey_bg">#f2f2f3</color>
+    <color name="default_divider">#ffcccccc</color>
+    <color name="overlap_product_bg">#80808080</color>
+
+</resources>

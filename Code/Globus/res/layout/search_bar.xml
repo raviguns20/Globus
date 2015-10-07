@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/custom_toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/toolbar_color"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/s5dp"
+    android:paddingLeft="@dimen/s15dp"
+    android:paddingRight="@dimen/s15dp"
+    android:paddingTop="@dimen/s5dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/s45dp"
+        android:background="@drawable/search_background"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/s5dp"
+        android:paddingTop="@dimen/s5dp"
+        android:weightSum="100" >
+
+        <RelativeLayout
+            android:id="@+id/rel_drawer_btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="15" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/menu_icon" />
+
+            <TextView
+                style="@style/style_singleline_dark_gray"
+                android:layout_alignParentRight="true" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/lin_serach_prod"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="85" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="85"
+                android:background="@android:color/white"
+                android:gravity="center"
+                android:hint="@string/txt_sarch_for_type_bands"
+                android:textColor="@color/color_darkgray"
+                android:textSize="@dimen/s15sp" />
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="25" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/search_icon" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

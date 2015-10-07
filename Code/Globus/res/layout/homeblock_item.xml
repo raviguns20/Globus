@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.globus"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_square_border"
+    android:padding="@dimen/s2dip" >
+
+    <RelativeLayout
+        android:id="@+id/relshopnow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+
+        <com.globus.fontutil.TextView_FontFutuLt_0
+            android:id="@+id/txtshopnow"
+            style="@style/style_dark_grey_background_text"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/s10dip"
+            android:text="@string/txt_shop_now" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relProductdescreption"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/relshopnow" >
+
+        <com.globus.fontutil.TextView_FontFutuLt_0
+            android:id="@+id/txtProductdescrebption"
+            style="@style/style_dark_grey_text"
+            android:layout_width="match_parent"
+            android:layout_centerInParent="true"
+            android:text="@string/txt_no_text" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relProductTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/relProductdescreption" >
+
+        <com.globus.fontutil.TextView_FontFutuLt_0
+            android:id="@+id/txtProductTitle"
+            style="@style/style_product_bold_black_text"
+            android:layout_width="match_parent"
+            android:text="@string/txt_no_text" />
+    </RelativeLayout>
+
+    
+    <RelativeLayout
+        android:id="@+id/rlTopLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/relProductTitle" >
+
+        <!--
+        <ImageView
+            android:id="@+id/imgProductImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/s0.5dip"
+            android:scaleType="fitCenter"
+            android:src="@drawable/small_banner_01" />
+        -->
+
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/imgProductImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_launcher" />
+    </RelativeLayout>
+
+</RelativeLayout>
